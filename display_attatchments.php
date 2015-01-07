@@ -12,7 +12,7 @@
 	<div id="post-thumbnails">
 		<?php if( $attachments->exist() ) : 
 				   while( $attachments->get() ) : ?>
-		<div class="post-thumb-wrap"><?php echo $attachments->image( 'thumbnail' ); ?></div>
+		<div class="post-thumb-wrap"><img src="<?php echo $attachments->src( 'full' ); ?>"/></div>
 		<?php endwhile;  endif; ?>
 	</div>
 </div>
